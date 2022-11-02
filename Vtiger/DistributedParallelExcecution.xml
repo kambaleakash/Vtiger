@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="5">
+ 
+  <test  name="Test1">
+    <classes>
+      <class name="com.vtiger.testscript.Campaigns"/>
+      
+  <!-- <class name="com.vtiger.testscript.Leads"/>	-->  
+    </classes>  
+  </test>
+   
+   <test name="Test2">
+    <classes>
+  	   <class name="com.vtiger.testscript.Leads"/>
+  	   
+    <!--  <class name="com.vtiger.testscript.Accounts"/>
+      <class name="com.vtiger.testscript.Contacts"/>	-->
+    </classes>
+   </test > <!-- Test -->
+   
+   <test name="Test3">
+    <classes>
+      <class name="com.vtiger.testscript.Accounts"/>
+  <!-- <class name="com.vtiger.testscript.Contacts"/>	-->
+    </classes>
+   </test >
+   
+   <test name="Test4">
+    <classes>
+  <!-- <class name="com.vtiger.testscript.Accounts"/>	--> 
+      <class name="com.vtiger.testscript.Contacts"/>
+    </classes>
+   </test >
+  
+</suite> <!-- Suite -->

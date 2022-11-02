@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" >
+
+  <test thread-count="5" name="Test" >
+ 
+  
+    <classes>
+    
+      <class name="com.vtiger.testscript.Campaigns"/>
+      	<methods>
+      		<!--	<exclude name="editCampaign"/> -->
+      	 	<include name="deleteCampaign"/> 
+      	</methods>
+      	
+      <class name="com.vtiger.testscript.Leads"/>
+      	<methods>
+     	 	<!-- 	<exclude name="editLead"/>	 -->
+      		<include name="deleteLead"/>
+      	</methods>
+      	
+      <class name="com.vtiger.testscript.Accounts"/>
+      	<methods>
+      		<!--	<exclude name="editAccount"/>	-->
+      	 	<include name="deleteAccount"/> 
+      	</methods>
+      	
+      <class name="com.vtiger.testscript.Contacts"/>
+      	<methods>
+      		<!--	<exclude name="editContact"/> -->
+      		<include name="deleteContact"/> 
+      	</methods>
+      	
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
